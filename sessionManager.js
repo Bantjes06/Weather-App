@@ -3,8 +3,8 @@ class SessionManager {
     constructor() {
         this.city;
         this.state;
-        this.defaultCity = 'Los Angeles';
-        this.defaultState = 'California';
+        this.defaultCity = 'Cape Town';
+        this.defaultState = 'Western Cape';
     }
 
     getLocationData() {
