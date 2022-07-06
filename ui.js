@@ -17,7 +17,7 @@ class UI {
         this.location.textContent = `${weather.location.city}, ${weather.location.state}`;
         this.description.textContent = `${weather.weather[0].main}`;
         this.string.textContent = `${UI.convertFromKelvin(weather.main.temp, 'C')}\u00B0C (${UI.convertFromKelvin(weather.main.temp, 'F')}\u00B0F)`;
-        this.icon.src = `http://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+        this.icon.src = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
         this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
         this.feelsLike.textContent = `Feels Like: ${UI.convertFromKelvin(weather.main.feels_like, 'C')}\u00B0C (${UI.convertFromKelvin(weather.main.feels_like, 'F')}\u00B0F)`;
         this.minMaxTemp.textContent = `Min: ${UI.convertFromKelvin(weather.main.temp_min, 'C')}\u00B0C (${UI.convertFromKelvin(weather.main.temp_min, 'F')}\u00B0F) Max: ${UI.convertFromKelvin(weather.main.temp_max, 'C')}\u00B0C (${UI.convertFromKelvin(weather.main.temp_max, 'F')}\u00B0F)`;
